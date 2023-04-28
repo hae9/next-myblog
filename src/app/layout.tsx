@@ -24,7 +24,7 @@ console.log(josefinSans.variable);
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={`${sourceSerifPro.variable} ${josefinSans.variable} `}>
+    <html lang="ko" className={`${sourceSerifPro.variable} ${josefinSans.variable}`}>
       {/* <ThemeProvider defaultTheme='light' attribute='class'> */}
       <body className="bg-uBgColor">
         <Header />
