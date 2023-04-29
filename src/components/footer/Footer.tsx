@@ -8,7 +8,7 @@ import Profile from '../Profile';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-uBgColor px-20 py-16">
+    <footer className="w-full px-20 py-16 shadow-inner bg-uBgColor">
       <div className="w-full h-80 flex justify-between">
         <NavCard title="Latest Articles">
           {/* @ts-expect-error Server Component */}
@@ -24,7 +24,7 @@ export default function Footer() {
           <Profile />
         </NavCard>
       </div>
-      <div className="w-full flex flex-col items-center justify-center mt-5">
+      <div className="w-full flex flex-col items-center justify-center my-12">
         <BlogTitle />
         <p className="font-serif">Published with Vercel</p>
       </div>

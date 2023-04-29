@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div className="flex min-h-screen">내용</div>;
+  return <main className="flex w-2/3 min-h-screen bg-uFeed">내용</main>;
 }
