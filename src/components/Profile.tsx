@@ -7,7 +7,7 @@ export default function Profile() {
         <div className="w-16 h-16 rounded-full bg-uSkyBlue"></div>
         <h5 className="font-bold text-uFontColor">Haekyung Kang</h5>
       </div>
-      <div>
+      <div className="font-serif">
         Hello! My name is Jonathan Doe working from Chile. I create some Ghost and Wordpress themes for differents markets, also, i offer live support via our
         ticket system.
       </div>
