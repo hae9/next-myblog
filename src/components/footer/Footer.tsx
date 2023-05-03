@@ -1,6 +1,6 @@
 import React from 'react';
 import NavCard from '../NavCard';
-import Articles from './Articles';
+import SmallArticles from './SmallArticles';
 import Tag from './Tag';
 import BlogTitle from '../header/BlogTitle';
 import SNS from '../SNS';
@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="w-full h-80 flex justify-between gap-14">
         <NavCard title="Latest Articles">
           {/* @ts-expect-error Server Component */}
-          <Articles />
+          <SmallArticles />
         </NavCard>
         <NavCard title="Tag Cloud">
           <div className="w-full flex gap-3 flex-wrap">

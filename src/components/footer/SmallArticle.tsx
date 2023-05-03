@@ -1,8 +1,9 @@
 import { Article } from '@/service/articles';
 import Image from 'next/image';
 import React from 'react';
+import UnderlineHeading from '../animation/UnderlineHeading';
 
-export default function Article({ article }: { article: Article }) {
+export default function SmallArticle({ article }: { article: Article }) {
   const { date, title, image } = article;
 
   return (
@@ -17,8 +18,8 @@ export default function Article({ article }: { article: Article }) {
         )}
       </div>
       <div className="w-5/6">
-        <h5 className="text-uPrimary font-bold text-sm">{title}</h5>
-        <span className="font-serif font-light text-xs">{date.toString()}</span>
+        <UnderlineHeading text={title} size="small" />
+        <p className="font-serif font-light text-xs">{date.toString()}</p>
       </div>
     </div>
   );

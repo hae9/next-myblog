@@ -4,6 +4,7 @@ import React from 'react';
 import Tag from './footer/Tag';
 import getStringDate from '@/utils/getStringDate';
 import { AiOutlineComment, AiOutlineFire } from 'react-icons/ai';
+import UnderlineHeading from './animation/UnderlineHeading';
 
 export default function ArticleCard({ article }: { article: Article }) {
   const { title, date, comments, likes, description, categories, image } = article;
@@ -11,11 +12,11 @@ export default function ArticleCard({ article }: { article: Article }) {
   return (
     <article className="w-full h-fit bg-uWhite p-14 shadow-md relative">
       <div className="flex gap-8 mb-5">
-        <div className="w-[100px] h-[100px] overflow-hidden relative">
+        <div className="w-[150px] h-[150px] overflow-hidden relative">
           <Image src={image} alt={image} style={{ objectFit: 'cover' }} fill={true} />
         </div>
         <div className="w-3/4">
-          <h3 className="font-bold text-4xl text-uBlue">{title}</h3>
+          <UnderlineHeading text={title} />
           <div className="flex items-center gap-3 font-serif text-uGray">
             <p>{getStringDate(date)}</p>
             <div className="w-3 h-[1px] bg-uRed"></div>
