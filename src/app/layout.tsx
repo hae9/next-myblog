@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {/* <ThemeProvider defaultTheme='light' attribute='class'> */}
       <body className="bg-uBgColor">
         <Header />
-        <main className="flex px-36 py-12 justify-between">
+        <main className="w-full flex px-36 mb-16 justify-between">
           {children}
           <SideBar />
         </main>

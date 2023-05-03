@@ -1,21 +1,27 @@
 import React from 'react';
 import NavCard from '../NavCard';
 import Articles from './Articles';
-import Tags from './Tags';
+import Tag from './Tag';
 import BlogTitle from '../header/BlogTitle';
 import SNS from '../SNS';
 import Profile from '../Profile';
 
 export default function Footer() {
+  const tags = ['Health', 'Lifestyle', 'Music', 'Tech', 'Travel'];
+
   return (
     <footer className="w-full px-20 py-16 shadow-inner bg-uBgColor">
-      <div className="w-full h-80 flex justify-between">
+      <div className="w-full h-80 flex justify-between gap-14">
         <NavCard title="Latest Articles">
           {/* @ts-expect-error Server Component */}
           <Articles />
         </NavCard>
         <NavCard title="Tag Cloud">
-          <Tags />
+          <div className="w-full flex gap-3 flex-wrap">
+            {tags.map((tag) => (
+              <Tag key={tag} name={tag} />
+            ))}
+          </div>
         </NavCard>
         <NavCard title="Follow Me!">
           <SNS type="footer" />
