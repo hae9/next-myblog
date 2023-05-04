@@ -6,7 +6,7 @@ import BlogTitle from './BlogTitle';
 
 export default function Header() {
   return (
-    <header className="px-36 py-16">
+    <header className="px-36 pt-16">
       <div className="w-full grid grid-cols-3 justify-items-stretch">
         <SNS type="header" />
         <BlogTitle />

@@ -11,7 +11,7 @@ export default function ArticleCard({ article }: { article: Article }) {
 
   return (
     <article className="w-full h-fit bg-uWhite p-14 shadow-md relative">
-      <div className="flex gap-8 mb-5">
+      <div className="flex flex-col xl:flex-row gap-8 mb-5">
         <div className="w-[150px] h-[150px] overflow-hidden relative">
           <Image src={image} alt={image} style={{ objectFit: 'cover' }} fill={true} />
         </div>

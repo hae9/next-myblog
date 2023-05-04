@@ -9,7 +9,7 @@ export default function SideBar() {
   const tags = ['Health', 'Lifestyle', 'Music', 'Tech', 'Travel'];
 
   return (
-    <aside className="w-fit h-fit flex flex-col gap-20">
+    <aside className="w-fit h-fit hidden xl:flex flex-col gap-20">
       <NavCard title="Latest Articles">
         {/* @ts-expect-error Server Component */}
         <SmallArticles />

@@ -4,6 +4,7 @@ import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
 import SideBar from '@/components/SideBar';
 import React from 'react';
+import Slider from '@/components/Slider';
 
 const sourceSerifPro = Source_Serif_Pro({
   weight: ['200', '300', '400', '600', '700', '900'],
@@ -28,7 +29,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {/* <ThemeProvider defaultTheme='light' attribute='class'> */}
       <body className="bg-uBgColor">
         <Header />
-        <main className="w-full flex px-36 mb-16 justify-between">
+        {/* @ts-expect-error Server Component */}
+        <Slider />
+        <main className="w-full gap-20 flex px-36 mb-16 justify-between">
           {children}
           <SideBar />
         </main>

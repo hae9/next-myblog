@@ -10,8 +10,8 @@ export default function Footer() {
   const tags = ['Health', 'Lifestyle', 'Music', 'Tech', 'Travel'];
 
   return (
-    <footer className="w-full px-20 py-16 shadow-inner bg-uBgColor">
-      <div className="w-full h-80 flex justify-between gap-14">
+    <footer className="w-full px-20 py-16 shadow-inner bg-uBgColor flex flex-col">
+      <div className="w-full h-fit flex flex-col xl:flex-row justify-between items-center xl:items-start gap-14">
         <NavCard title="Latest Articles">
           {/* @ts-expect-error Server Component */}
           <SmallArticles />

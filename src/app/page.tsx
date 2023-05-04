@@ -7,8 +7,8 @@ export default async function Home() {
   // const three = await get3Articles();
 
   return (
-    <main className="flex w-2/3 min-h-screen flex-col gap-20">
+    <div className="grow flex w-2/3 min-h-screen flex-col gap-20">
       <Articles articles={articles} />
-    </main>
+    </div>
   );
 }
